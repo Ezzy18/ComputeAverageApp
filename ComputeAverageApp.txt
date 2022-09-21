@@ -1,0 +1,28 @@
+
+using System;
+
+namespace ComputeAverageApp
+{
+ public class ComputeAverageProgram
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter 5 grades seperated by new line: ");
+        int g1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write ("\n");
+        int g2 = Convert.ToInt32(Console.ReadLine());
+        Console.Write ("\n");
+        int g3 = Convert.ToInt32(Console.ReadLine());
+        Console.Write ("\n");
+        int g4 = Convert.ToInt32(Console.ReadLine());
+        Console.Write ("\n");
+        int g5 = Convert.ToInt32(Console.ReadLine());
+        
+        double average = (g1 + g2 + g3 + g4 + g5) / 5;
+        double roundedaverage = Math.Round(average, 0);
+        Console.WriteLine ("The average is " + average + " and round off to " + roundedaverage );
+        Console.Write ("Press any key to exit... ");
+        Console.ReadKey();
+    }
+}    
+}
